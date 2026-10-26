@@ -16,315 +16,378 @@
 
 <body>
 
-  <header class="bg-primary text-white py-4">
-    <div class="container">
-      <div class="row align-items-center">
+  
 
-        <div class="col-12 col-md-8">
-          <h1 class="h3 mb-1">Bootstrap Shop</h1>
 
-          <p class="mb-0 opacity-75">
-            Учебный интернет-магазин на Bootstrap
-          </p>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-dark ggwp-navbar">
+  <div class="container">
 
-        <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
-          <span class="badge bg-light text-primary">
-            КР №2
-          </span>
-        </div>
+    <a class="navbar-brand fw-bold fs-4" href="index.html">
+      <span class="brand-gg">GG</span><span class="brand-wp">WP</span>
+    </a>
 
-      </div>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar"
+      aria-expanded="false"
+      aria-label="Открыть меню"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Главная</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="catalog.html">Каталог</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Дополнительно
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-dark">
+
+  <li>
+    <a class="dropdown-item" href="catalog.html">
+      Все товары
+    </a>
+  </li>
+
+  <li>
+    <a class="dropdown-item" href="index.html#popular">
+      Популярное
+    </a>
+  </li>
+
+  <li>
+    <hr class="dropdown-divider">
+  </li>
+
+  <li>
+    <a class="dropdown-item" href="support.html">
+      Поддержка
+    </a>
+  </li>
+
+</ul>
+        </li>
+
+      </ul>
     </div>
-  </header>
 
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-
-      <a class="navbar-brand" href="index.html">
-        Bootstrap Shop
-      </a>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNavbar"
-        aria-controls="mainNavbar"
-        aria-expanded="false"
-        aria-label="Переключить навигацию"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav ms-auto">
-
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="index.html"
-            >
-              Главная
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="catalog.html">
-              Каталог
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="product.html">
-              Товар
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="order.html">
-              Заявка
-            </a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Дополнительно
-            </a>
-
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="catalog.html">
-                  Все товары
-                </a>
-              </li>
-
-              <li>
-                <a class="dropdown-item" href="order.html">
-                  Оформить заявку
-                </a>
-              </li>
-
-              <li>
-                <a class="dropdown-item" href="index.html#popular">
-                  Популярное
-                </a>
-              </li>
-            </ul>
-          </li>
-
-        </ul>
-      </div>
-
-    </div>
-  </nav>
+  </div>
+</nav>
 
 
   <main>
 
-    <section class="container my-5">
-      <div class="row align-items-center g-4">
+    <section class="ggwp-hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
 
-        <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-6">
 
-          <h2 class="display-5 fw-bold">
-            Учебный каталог товаров на Bootstrap
-          </h2>
+        <span class="ggwp-label">
+          МАГАЗИН ПЕРИФЕРИИ
+        </span>
 
-          <p class="lead text-muted">
-            Проект демонстрирует использование Bootstrap-сетки,
-            адаптивных колонок и базовых utility-классов.
-          </p>
+        <h1 class="display-3 fw-bold mt-3 mb-3">
+          Good game starts<br>
+          with <span class="text-ggwp">good gear.</span>
+        </h1>
 
-          <a class="btn btn-primary btn-lg" href="catalog.html">
-            Перейти в каталог
+        <p class="lead ggwp-muted mb-4">
+          Игровые мыши, клавиатуры, гарнитуры и аксессуары
+          для комфортной и точной игры.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3">
+          <a class="btn btn-ggwp btn-lg" href="catalog.html">
+            Смотреть каталог
           </a>
 
-        </div>
-
-        <div class="col-12 col-lg-6">
-
-          <div class="p-5 bg-light border rounded text-center">
-            <p class="mb-0 text-muted">
-              Здесь может быть изображение, баннер или промо-блок.
-            </p>
-          </div>
-
+          <a class="btn btn-outline-ggwp btn-lg" href="#popular">
+            Популярные товары
+          </a>
         </div>
 
       </div>
-    </section>
+
+      <div class="col-12 col-lg-6">
+        <div class="ggwp-logo-area">
+          <img
+            src="images/logo-hero.png"
+            class="img-fluid ggwp-hero-logo"
+            alt="GGWP"
+          >
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
-    <section class="container my-5">
+    <section class="ggwp-features py-5">
+  <div class="container">
 
-      <h2 class="text-center mb-4">
-        Преимущества проекта
+    <div class="text-center mb-5">
+      <span class="ggwp-label">ПОЧЕМУ GGWP</span>
+
+      <h2 class="fw-bold text-white mt-2 mb-3">
+        Всё для твоего сетапа
       </h2>
 
-      <div class="row g-4">
+      <p class="ggwp-muted mx-auto ggwp-section-description">
+        Подбираем игровые девайсы, которые помогают играть комфортнее,
+        точнее и просто получать больше удовольствия от каждой катки.
+      </p>
+    </div>
 
-        <div class="col-12 col-md-4">
-          <div class="p-4 border rounded h-100 bg-white">
+    <div class="row g-4">
 
-            <h3 class="h5">
-              Bootstrap-сетка
-            </h3>
+      <div class="col-12 col-md-4">
+        <div class="ggwp-feature-card h-100">
 
-            <p class="mb-0 text-muted">
-              Страница построена на 12-колоночной системе Bootstrap.
-            </p>
-
+          <div class="ggwp-feature-number">
+            01
           </div>
+
+          <h3 class="h5 text-white fw-bold">
+            Точный контроль
+          </h3>
+
+          <p class="ggwp-muted mb-0">
+            Игровые мыши, клавиатуры и аксессуары для быстрого
+            и точного управления.
+          </p>
+
         </div>
-
-        <div class="col-12 col-md-4">
-          <div class="p-4 border rounded h-100 bg-white">
-
-            <h3 class="h5">
-              Адаптивность
-            </h3>
-
-            <p class="mb-0 text-muted">
-              Колонки меняют ширину в зависимости от размера экрана.
-            </p>
-
-          </div>
-        </div>
-
-        <div class="col-12 col-md-4">
-          <div class="p-4 border rounded h-100 bg-white">
-
-            <h3 class="h5">
-              Готовая база
-            </h3>
-
-            <p class="mb-0 text-muted">
-              Проект подготовлен к добавлению карточек, форм и модальных окон.
-            </p>
-
-          </div>
-        </div>
-
       </div>
-    </section>
+
+      <div class="col-12 col-md-4">
+        <div class="ggwp-feature-card h-100">
+
+          <div class="ggwp-feature-number">
+            02
+          </div>
+
+          <h3 class="h5 text-white fw-bold">
+            Комфорт в каждой игре
+          </h3>
+
+          <p class="ggwp-muted mb-0">
+            Гарнитуры и девайсы, рассчитанные на долгие игровые
+            сессии без лишнего дискомфорта.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="ggwp-feature-card h-100">
+
+          <div class="ggwp-feature-number">
+            03
+          </div>
+
+          <h3 class="h5 text-white fw-bold">
+            Собери свой сетап
+          </h3>
+
+          <p class="ggwp-muted mb-0">
+            Подбери устройства под свой стиль игры и создай
+            рабочее место, которое действительно нравится.
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
 
-    <section class="container my-5" id="popular">
+    <section id="popular" class="ggwp-products py-5">
+  <div class="container">
 
-      <div class="d-flex justify-content-between align-items-center mb-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-5">
+      <div>
+        <span class="ggwp-label">ПОПУЛЯРНОЕ</span>
 
-        <h2 class="mb-0">
-          Популярные товары
+        <h2 class="fw-bold text-white mt-2 mb-2">
+          Топовые девайсы
         </h2>
-
-        <a class="btn btn-outline-primary" href="catalog.html">
-          Все товары
-        </a>
-
       </div>
 
-      <div class="row g-4">
+      <a class="btn btn-outline-ggwp" href="catalog.html">
+        Смотреть весь каталог
+      </a>
+    </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="border rounded h-100 p-4">
+    <div class="row g-4">
 
-            <span class="badge bg-success mb-3">
-              Новинка
-            </span>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="ggwp-product-card h-100">
 
-            <h3 class="h5">
-              Товар 1
+          <div class="ggwp-product-badge">
+            ХИТ
+          </div>
+
+          <div class="ggwp-product-image">
+            <img
+              src="images/logitech-superlight.png"
+              alt="Logitech G Pro X Superlight"
+              class="ggwp-product-photo"
+            >
+          </div>
+
+          <div class="ggwp-product-body">
+            <p class="ggwp-product-category mb-2">
+              Игровая мышь
+            </p>
+
+            <h3 class="h4 text-white fw-bold mb-4">
+              Logitech G Pro X Superlight
             </h3>
 
-            <p class="text-muted">
-              Краткое описание учебного товара.
-            </p>
+            <div class="d-flex justify-content-between align-items-center gap-3">
+              <span class="ggwp-price">
+                12 990 ₽
+              </span>
 
-            <p class="fw-bold mb-3">
-              1000 руб.
-            </p>
-
-            <a class="btn btn-primary" href="product.html">
-              Подробнее
-            </a>
-
+              <a class="btn btn-ggwp" href="product.html">
+                Подробнее
+              </a>
+            </div>
           </div>
+
         </div>
-
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="border rounded h-100 p-4">
-
-            <span class="badge bg-warning text-dark mb-3">
-              Хит
-            </span>
-
-            <h3 class="h5">
-              Товар 2
-            </h3>
-
-            <p class="text-muted">
-              Краткое описание учебного товара.
-            </p>
-
-            <p class="fw-bold mb-3">
-              1500 руб.
-            </p>
-
-            <a class="btn btn-primary" href="product.html">
-              Подробнее
-            </a>
-
-          </div>
-        </div>
-
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="border rounded h-100 p-4">
-
-            <span class="badge bg-danger mb-3">
-              Скидка
-            </span>
-
-            <h3 class="h5">
-              Товар 3
-            </h3>
-
-            <p class="text-muted">
-              Краткое описание учебного товара.
-            </p>
-
-            <p class="fw-bold mb-3">
-              2000 руб.
-            </p>
-
-            <a class="btn btn-primary" href="product.html">
-              Подробнее
-            </a>
-
-          </div>
-        </div>
-
       </div>
-    </section>
+
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="ggwp-product-card h-100">
+
+          <div class="ggwp-product-badge">
+            ТОП
+          </div>
+
+          <div class="ggwp-product-image">
+            <img
+              src="images/varmilo-minilo.png"
+              alt="Varmilo Minilo 75%"
+              class="ggwp-product-photo"
+            >
+          </div>
+
+          <div class="ggwp-product-body">
+            <p class="ggwp-product-category mb-2">
+              Механическая клавиатура
+            </p>
+
+            <h3 class="h4 text-white fw-bold mb-4">
+              Varmilo Minilo 75%
+            </h3>
+
+            <div class="d-flex justify-content-between align-items-center gap-3">
+              <span class="ggwp-price">
+                15 990 ₽
+              </span>
+
+              <a class="btn btn-ggwp" href="product-varmilo.html">
+                Подробнее
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="ggwp-product-card h-100">
+
+          <div class="ggwp-product-badge">
+            ИМБА
+          </div>
+
+          <div class="ggwp-product-image">
+            <img
+              src="images/logitech-pro-x-wireless.png"
+              alt="Logitech G Pro X Wireless"
+              class="ggwp-product-photo"
+            >
+          </div>
+
+          <div class="ggwp-product-body">
+            <p class="ggwp-product-category mb-2">
+              Игровая гарнитура
+            </p>
+
+            <h3 class="h4 text-white fw-bold mb-4">
+              Logitech G Pro X Wireless
+            </h3>
+
+            <div class="d-flex justify-content-between align-items-center gap-3">
+              <span class="ggwp-price">
+                18 990 ₽
+              </span>
+
+              <a class="btn btn-ggwp" href="product-headset.html">
+                Подробнее
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
   </main>
 
 
-  <footer class="bg-dark text-white py-4 mt-5">
+<footer class="ggwp-footer">
   <div class="container">
-    <p class="mb-0 text-center">
-      &copy; 2026 Bootstrap Shop. Учебный проект.
-    </p>
+    <div class="row align-items-center g-3">
+
+      <div class="col-12 col-md-6 text-center text-md-start">
+        <div class="ggwp-footer-brand">
+          <span class="brand-gg">GG</span><span class="brand-wp">WP</span>
+        </div>
+
+        <p class="ggwp-footer-text mb-0">
+          Игровые девайсы для хорошей игры.
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 text-center text-md-end">
+        <p class="ggwp-footer-copy mb-0">
+          © 2026 GGWP. Учебный проект.
+        </p>
+      </div>
+
+    </div>
   </div>
 </footer>
 

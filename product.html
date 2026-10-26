@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Товар — Bootstrap Shop</title>
+  <title>Logitech G Pro X Superlight — GGWP</title>
 
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -14,12 +15,13 @@
   <link rel="stylesheet" href="css/custom.css">
 </head>
 
-<body class="bg-light">
+<body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark ggwp-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
-        Bootstrap Shop
+
+      <a class="navbar-brand fw-bold fs-4" href="index.html">
+        <span class="brand-gg">GG</span><span class="brand-wp">WP</span>
       </a>
 
       <button
@@ -29,13 +31,14 @@
         data-bs-target="#mainNavbar"
         aria-controls="mainNavbar"
         aria-expanded="false"
-        aria-label="Переключить навигацию"
+        aria-label="Открыть меню"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav ms-auto">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center">
 
           <li class="nav-item">
             <a class="nav-link" href="index.html">
@@ -49,23 +52,8 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="product.html"
-            >
-              Товар
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="order.html">
-              Заявка
-            </a>
-          </li>
-
           <li class="nav-item dropdown">
+
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -76,214 +64,289 @@
               Дополнительно
             </a>
 
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="catalog.html">
-                  Все товары
-                </a>
-              </li>
+            <ul class="dropdown-menu dropdown-menu-dark">
 
-              <li>
-                <a class="dropdown-item" href="order.html">
-                  Оформить заявку
-                </a>
-              </li>
+  <li>
+    <a class="dropdown-item" href="catalog.html">
+      Все товары
+    </a>
+  </li>
 
-              <li>
-                <a class="dropdown-item" href="index.html#popular">
-                  Популярное
-                </a>
-              </li>
-            </ul>
+  <li>
+    <a class="dropdown-item" href="index.html#popular">
+      Популярное
+    </a>
+  </li>
+
+  <li>
+    <hr class="dropdown-divider">
+  </li>
+
+  <li>
+    <a class="dropdown-item" href="support.html">
+      Поддержка
+    </a>
+  </li>
+
+</ul>
+
           </li>
 
         </ul>
+
       </div>
     </div>
   </nav>
 
-  <main class="container my-5">
 
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html">Главная</a>
-        </li>
+  <main class="ggwp-product-page">
 
-        <li class="breadcrumb-item">
-          <a href="catalog.html">Каталог</a>
-        </li>
+    <div class="container py-5">
 
-        <li
-          class="breadcrumb-item active"
-          aria-current="page"
-        >
-          Товар 1
-        </li>
-      </ol>
-    </nav>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb ggwp-breadcrumb">
 
-    <div class="row g-4">
+          <li class="breadcrumb-item">
+            <a href="index.html">Главная</a>
+          </li>
 
-      <div class="col-12 col-lg-6">
-        <div class="card shadow-sm">
-          <div
-            class="placeholder-image bg-light border rounded d-flex align-items-center justify-content-center"
-          >
-            <span class="text-muted">
-              Изображение товара
+          <li class="breadcrumb-item">
+            <a href="catalog.html">Каталог</a>
+          </li>
+
+          <li class="breadcrumb-item active" aria-current="page">
+            Logitech G Pro X Superlight
+          </li>
+
+        </ol>
+      </nav>
+
+
+      <div class="row g-5 align-items-center mt-2">
+
+        <div class="col-12 col-lg-6">
+
+          <div class="ggwp-product-main-image">
+
+            <span class="ggwp-product-page-badge">
+              ХИТ
             </span>
+
+            <img
+              src="images/logitech-superlight.png"
+              alt="Logitech G Pro X Superlight"
+              class="img-fluid"
+            >
+
           </div>
+
         </div>
+
+
+        <div class="col-12 col-lg-6">
+
+          <p class="ggwp-product-category mb-2">
+            Игровая мышь
+          </p>
+
+          <h1 class="display-5 fw-bold text-white mb-3">
+            Logitech G Pro X Superlight
+          </h1>
+
+          <p class="ggwp-muted fs-5 mb-4">
+            Лёгкая беспроводная игровая мышь для соревновательной игры.
+            Минималистичная форма, точный сенсор и технология LIGHTSPEED.
+          </p>
+
+          <div class="ggwp-product-page-price mb-4">
+            12 990 ₽
+          </div>
+
+          <div class="d-flex flex-wrap gap-3">
+
+            <a class="btn btn-ggwp btn-lg" href="order.html?product=superlight">
+              Купить
+            </a>
+
+            <a class="btn btn-outline-ggwp btn-lg" href="catalog.html">
+              Назад в каталог
+            </a>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="col-12 col-lg-6">
 
-        <span class="badge bg-success mb-3">
-          Новинка
+      <section class="mt-5 pt-4">
+
+        <span class="ggwp-label">
+          ХАРАКТЕРИСТИКИ
         </span>
 
-        <h1 class="h2">
-          Товар 1
-        </h1>
+        <h2 class="text-white fw-bold mt-2 mb-4">
+          Всё, что нужно для игры
+        </h2>
 
-        <p class="lead text-muted">
-          Подробное описание учебного товара для страницы карточки.
-        </p>
+        <div class="table-responsive">
 
-        <p class="fs-3 fw-bold">
-          1000 руб.
-        </p>
+          <table class="table ggwp-spec-table">
 
-        <div class="d-flex gap-2 mb-4">
+            <tbody>
 
-          <a
-            class="btn btn-primary btn-lg"
-            href="order.html"
-          >
-            Оформить заявку
-          </a>
+              <tr>
+                <th>Тип</th>
+                <td>Беспроводная игровая мышь</td>
+              </tr>
 
-          <a
-            class="btn btn-outline-secondary btn-lg"
-            href="catalog.html"
-          >
-            Назад в каталог
-          </a>
+              <tr>
+                <th>Подключение</th>
+                <td>LIGHTSPEED Wireless</td>
+              </tr>
+
+              <tr>
+                <th>Сенсор</th>
+                <td>HERO 25K</td>
+              </tr>
+
+              <tr>
+                <th>Максимальная чувствительность</th>
+                <td>25 600 DPI</td>
+              </tr>
+
+              <tr>
+                <th>Вес</th>
+                <td>Менее 63 г</td>
+              </tr>
+
+              <tr>
+                <th>Цвет</th>
+                <td>Чёрный</td>
+              </tr>
+
+            </tbody>
+
+          </table>
 
         </div>
 
-        <div class="alert alert-warning" role="alert">
-          Это учебная карточка товара. Данные используются для демонстрации
-          Bootstrap-компонентов.
+      </section>
+
+
+      <section class="mt-5">
+
+        <span class="ggwp-label">
+          ПОДРОБНЕЕ
+        </span>
+
+        <h2 class="text-white fw-bold mt-2 mb-4">
+          Частые вопросы
+        </h2>
+
+        <div class="accordion ggwp-accordion" id="productAccordion">
+
+          <div class="accordion-item">
+
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#questionOne"
+              >
+                Для каких игр подходит эта мышь?
+              </button>
+            </h2>
+
+            <div
+              id="questionOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#productAccordion"
+            >
+
+              <div class="accordion-body">
+                Мышь хорошо подходит для соревновательных игр,
+                где важны небольшой вес, точность и быстрые движения.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="accordion-item">
+
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#questionTwo"
+              >
+                Можно ли использовать мышь по проводу?
+              </button>
+            </h2>
+
+            <div
+              id="questionTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#productAccordion"
+            >
+
+              <div class="accordion-body">
+                Кабель используется для зарядки устройства,
+                при этом мышь можно продолжать использовать.
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
-      </div>
+      </section>
+
     </div>
-
-    <section class="mt-5">
-
-      <h2 class="h4 mb-3">
-        Характеристики
-      </h2>
-
-      <div class="table-responsive">
-        <table class="table table-striped table-bordered align-middle">
-          <tbody>
-
-            <tr>
-              <th scope="row">Категория</th>
-              <td>Учебные товары</td>
-            </tr>
-
-            <tr>
-              <th scope="row">Цена</th>
-              <td>1000 руб.</td>
-            </tr>
-
-            <tr>
-              <th scope="row">Наличие</th>
-              <td>В наличии</td>
-            </tr>
-
-          </tbody>
-        </table>
-      </div>
-
-    </section>
-
-        <section class="container my-5">
-  <h2 class="h4 mb-3">Частые вопросы</h2>
-
-  <div class="accordion" id="faqAccordion">
-
-    <div class="accordion-item">
-      <h3 class="accordion-header">
-        <button
-          class="accordion-button"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#faqOne"
-          aria-expanded="true"
-          aria-controls="faqOne"
-        >
-          Можно ли оформить заявку без регистрации?
-        </button>
-      </h3>
-
-      <div
-        id="faqOne"
-        class="accordion-collapse collapse show"
-        data-bs-parent="#faqAccordion"
-      >
-        <div class="accordion-body">
-          Да, в учебном проекте заявка оформляется без регистрации.
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h3 class="accordion-header">
-        <button
-          class="accordion-button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#faqTwo"
-          aria-expanded="false"
-          aria-controls="faqTwo"
-        >
-          Где используется Bootstrap?
-        </button>
-      </h3>
-
-      <div
-        id="faqTwo"
-        class="accordion-collapse collapse"
-        data-bs-parent="#faqAccordion"
-      >
-        <div class="accordion-body">
-          Bootstrap используется для сетки, карточек, форм, навигации,
-          сообщений и модальных окон.
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
 
   </main>
 
-<footer class="bg-dark text-white py-4 mt-5">
-  <div class="container">
-    <p class="mb-0 text-center">
-      &copy; 2026 Bootstrap Shop. Учебный проект.
-    </p>
-  </div>
-</footer>
+
+  <footer class="ggwp-footer">
+    <div class="container">
+
+      <div class="row align-items-center g-3">
+
+        <div class="col-12 col-md-6 text-center text-md-start">
+
+          <div class="ggwp-footer-brand">
+            <span class="brand-gg">GG</span><span class="brand-wp">WP</span>
+          </div>
+
+          <p class="ggwp-footer-text mb-0">
+            Игровые девайсы для хорошей игры.
+          </p>
+
+        </div>
+
+        <div class="col-12 col-md-6 text-center text-md-end">
+
+          <p class="ggwp-footer-copy mb-0">
+            © 2026 GGWP. Учебный проект.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
 
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
   </script>
 
 </body>
+
 </html>
